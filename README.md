@@ -1,4 +1,4 @@
-# Instal-Stable dockerised
+# Instal-Stable dockerized
 setting up INSTAL stable with peace of mind......
 
 
