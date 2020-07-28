@@ -85,7 +85,7 @@ An alternative approach (though exhaustive) is to export the entire volume of th
 Would be sorted out in the next iteration;
 
 * having a `.tar.gz` of a repository within the folder iclingo is a bad practice. I couldn't get `wget` to stop failing so I refactored the Dockerfile to use that one instead.
-* having the instal-stable files within istable is another bad practice. I should have created a nested repository which pulls a tagged version from the instal-stable repository. 
+* having the instal-stable files within istable is another bad practice. I should have created a nested repository which pulls a tagged version from the instal-stable repository and then altered that with the new `launcher.py` file
 
 
 
