@@ -54,10 +54,11 @@ RUN  tar -xvzf clingo-${clingo_version}.tar.gz && cd clingo-${clingo_version} &&
 RUN rm clingo-${clingo_version}.tar.gz
 
 # change ownership to instal (avoid using root)
-RUN chown -R instal ../clingo-${clingo_version}
+#RUN useradd instal
+#RUN chown -R instal ../clingo-${clingo_version}
 
 # change user (avoid using root)
-USER instal 
+#USER instal 
 
 # echo warning
 CMD ["echo", "USAGE: to build INSTAL image upon"]
@@ -95,6 +96,7 @@ RUN pip install . --force
 
 
 # change ownership to instal (avoid using root)
+RUN useradd instal
 RUN chown -R instal ../instal-stable-1.0.0
 
 # change user (avoid using root)
