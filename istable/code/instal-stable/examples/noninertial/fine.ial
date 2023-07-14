@@ -1,6 +1,0 @@
-institution frihf;
-
-noninertial fluent a;
-noninertial fluent b;
-
-a when b;
